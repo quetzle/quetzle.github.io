@@ -3,17 +3,28 @@
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Work+Sans:500,700');
 	
+	html {font-size:16px}
+	
 	body {
 		margin: 0;
-		padding: 2rem 0 0 0;
+		padding: 2rem;
 		font-family: 'Work Sans',sans-serif;
 		color: #222;
-		border: 12px solid #FF9954;
+		border-width: 12px;
+		border-style: solid;
+		border-image: linear-gradient(to bottom, #FF7197, #FF9954);
+		border-image-slice: 1;
 	}
 	
 	h1 {
-		font-size: 40px;
-		margin:0 0 1rem 0;
+		font-size: 2.5rem;
+		margin:0 0 1.5rem 0;
+	}
+	
+	h1 img {
+		top: .15rem;
+		height: 1.75rem;
+		position: relative;
 	}
 	
 	p {
@@ -27,7 +38,7 @@
 	}
 
 	#content {
-		width: 800px;
+		max-width: 800px;
 		margin: 0 auto;
 		
 	}
@@ -44,13 +55,13 @@
 		vertical-align: middle;
 		color: #000;
 		text-decoration: none;
-		font-size: 24px;
+		font-size: 1.5em;
 		margin-bottom: 6px;
 		font-weight: 700;
 	}
 	
 	.link a:hover {
-		border-bottom: 6px solid #aaa;
+		border-bottom: 6px solid #FF7197;
 		margin-bottom: 0;
 		color: #222;
 	}
@@ -58,15 +69,23 @@
 	.link a:hover:after {
 		content: " \00bb";
 		border-bottom: 6px solid #fff;
-		font-size: 24px;
-		line-height: 16px;
+		font-size: 1.5rem;
 	}
 	
+	#footer {
+		font-size: .75rem;
+		color: #444;
+		font-style: italic;
+	}
+	
+	@media (max-width: 1200px) {
+		html {font-size:20px;}
+	}
 </style>
 </head>
 <body>
 	<div id="content">
-		<h1>j calzone</h1>
+		<h1>j calzone <img src="logo.png" /></h1>
 		<div id="links">
 			<div class="link"><a href="smash-apps">smash apps</a></div>
 			<p>collection of smash bros. related web apps, including <em>the</em> tier list maker</p>
@@ -74,12 +93,16 @@
 			<div class="link"><a href="art">art</a></div>
 			<p>some art i've made, very crispy</p>
 			<hr />
-			<div class="link"><a href="https://twitter.com/jj_calzone">twitter</a></div>
 			<div class="link"><a href="https://github.com/quetzle">github</a></div>
+			<div class="link"><a href="https://codepen.io/radbot/">codepen</a></div>
+			<hr />
+			<div class="link"><a href="https://twitter.com/jj_calzone">twitter</a></div>
 			<div class="link"><a href="mailto:j@jcal.zone">email</a></div>
 			<hr />
 			<div class="link"><a href="https://letterboxd.com/radbot/">letterboxd</a></div>
 			<div class="link"><a href="https://www.last.fm/user/radbot_">last.fm</a></div>
+			<hr />
+			<div id="footer">2017 - j calzone</div>
 		</div>
 	</div>
 </body>
