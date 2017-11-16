@@ -50,6 +50,12 @@
 	
 	.link {
 		display: block;
+		color: white;
+		font-size: 1.5em;
+	}
+	
+	.link:hover {
+		color: #222;
 	}
 	
 	.link a {
@@ -57,12 +63,11 @@
 		vertical-align: middle;
 		color: #000;
 		text-decoration: none;
-		font-size: 1.5em;
 		margin-bottom: 6px;
 		font-weight: 700;
 	}
 	
-	.link a:hover {
+	.link a span:hover {
 		border-bottom: 6px solid #FF7197;
 		margin-bottom: 0;
 		color: #222;
@@ -70,7 +75,6 @@
 	
 	.link a:hover:after {
 		content: " \00bb";
-		border-bottom: 6px solid #fff;
 		font-size: 1.5rem;
 	}
 	
@@ -91,20 +95,20 @@
 	<div id="content">
 		<h1>j calzone <img src="logo.png" /></h1>
 		<div id="links">
-			<div class="link"><a href="smash-apps">smash apps</a></div>
+			<div class="link"><a href="smash-apps"><span>smash apps</span></a></div>
 			<p>collection of smash bros. related web apps, including <em>the</em> tier list maker</p>
 			<hr />
-			<div class="link"><a href="art">art</a></div>
+			<div class="link"><a href="art"><span>art</span></a></div>
 			<p>some art i've made, very crispy</p>
 			<hr />
-			<div class="link"><a href="https://github.com/quetzle">github</a></div>
-			<div class="link"><a href="https://codepen.io/radbot/">codepen</a></div>
+			<div class="link"><a href="https://github.com/quetzle"><span>github</span></a></div>
+			<div class="link"><a href="https://codepen.io/radbot/"><span>codepen</span></a></div>
 			<hr />
-			<div class="link"><a href="https://twitter.com/jj_calzone">twitter</a></div>
-			<div class="link"><a href="mailto:j@jcal.zone">email</a></div>
+			<div class="link"><a href="https://twitter.com/jj_calzone"><span>twitter</span></a></div>
+			<div class="link"><a href="mailto:j@jcal.zone"><span>email</span></a></div>
 			<hr />
-			<div class="link"><a href="https://letterboxd.com/radbot/">letterboxd</a></div>
-			<div class="link"><a href="https://www.last.fm/user/radbot_">last.fm</a></div>
+			<div class="link"><a href="https://letterboxd.com/radbot/"><span>letterboxd</span></a></div>
+			<div class="link"><a href="https://www.last.fm/user/radbot_"><span>last.fm</span></a></div>
 			<hr />
 			<div id="footer">2017 - j calzone</div>
 		</div>
